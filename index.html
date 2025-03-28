@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekolah Kita</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-blue-700 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-school text-2xl"></i>
+                <h1 class="text-2xl font-bold">SEKOLAH KITA</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-200">Beranda</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200">Profil</a></li>
+                    <li><a href="gallery.html" class="hover:text-blue-200">Galeri</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Selamat Datang di Sekolah Kita</h2>
+            <p class="text-xl mb-8">Membentuk generasi unggul dan berkarakter</p>
+            <a href="#about" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Tentang Sekolah</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">Visi & Misi</h3>
+                    <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                    <p class="text-gray-600">Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sekolah" class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Berita Terkini</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Berita akan diisi dari database -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-700">Judul Berita 1</h3>
+                    <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Baca selengkapnya</a>
+                </div>
+                <!-- Tambahan berita -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SEKOLAH KITA</h3>
+                    <p>Jl. Pendidikan No. 123</p>
+                    <p>Kota Pendidikan, 12345</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak</h3>
+                    <p><i class="fas fa-phone mr-2"></i> (021) 1234567</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@sekolahkita.sch.id</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sosial Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p>&copy; 2023 Sekolah Kita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
