@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Sekolah Kita</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-blue-700 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-school text-2xl"></i>
+                <h1 class="text-2xl font-bold">SEKOLAH KITA</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-200">Beranda</a></li>
+                    <li><a href="about.html" class="hover:text-blue-200">Profil</a></li>
+                    <li><a href="gallery.html" class="hover:text-blue-200 font-semibold">Galeri</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <section class="mb-16">
+            <h1 class="text-3xl font-bold mb-8 text-center text-gray-800">Galeri Kegiatan</h1>
+            
+            <div class="mb-8 flex justify-center">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-l-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:ring-2 focus:ring-blue-500">
+                        Semua
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:ring-2 focus:ring-blue-500">
+                        Akademik
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:ring-2 focus:ring-blue-500">
+                        Ekstrakurikuler
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium rounded-r-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:ring-2 focus:ring-blue-500">
+                        Event
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Kegiatan Belajar" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Kegiatan Belajar di Kelas</h3>
+                        <p class="text-gray-600 text-sm">Siswa-siswi kelas 10 sedang mengikuti pelajaran matematika dengan antusias.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Praktikum Sains" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Praktikum Sains</h3>
+                        <p class="text-gray-600 text-sm">Siswa melakukan eksperimen kimia di laboratorium sekolah.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Lomba 17 Agustus" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Lomba 17 Agustus</h3>
+                        <p class="text-gray-600 text-sm">Perayaan kemerdekaan dengan berbagai lomba seru.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Kegiatan Pramuka" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Kegiatan Pramuka</h3>
+                        <p class="text-gray-600 text-sm">Latihan kepemimpinan dan kemandirian dalam kegiatan pramuka.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Pentas Seni" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Pentas Seni</h3>
+                        <p class="text-gray-600 text-sm">Penampilan siswa dalam acara pentas seni tahunan.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1524179091875-bccc9d505e5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                             alt="Studi Lapangan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Studi Lapangan</h3>
+                        <p class="text-gray-600 text-sm">Kunjungan edukatif ke museum nasional.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 flex justify-center">
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition flex items-center">
+                    <i class="fas fa-images mr-2"></i> Lihat Lebih Banyak
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SEKOLAH KITA</h3>
+                    <p>Jl. Pendidikan No. 123</p>
+                    <p>Kota Pendidikan, 12345</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak</h3>
+                    <p><i class="fas fa-phone mr-2"></i> (021) 1234567</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@sekolahkita.sch.id</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sosial Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p>&copy; 2023 Sekolah Kita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
