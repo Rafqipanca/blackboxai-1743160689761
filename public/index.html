@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekolah Kita - Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('assets/images/school-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navbar Modern -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-school text-3xl text-blue-600"></i>
+                <h1 class="text-2xl font-bold text-gray-800">SEKOLAH KITA</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-blue-600 font-medium border-b-2 border-blue-600 py-2">Beranda</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-blue-600 transition py-2">Profil</a></li>
+                    <li><a href="gallery.html" class="text-gray-600 hover:text-blue-600 transition py-2">Galeri</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-blue-600 transition py-2">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center text-white">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Sekolah Kita</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Sekolah unggulan dengan pendidikan berkualitas untuk membentuk generasi berkarakter</p>
+            <a href="about.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium inline-block transition">
+                Kenali Sekolah Kami
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- Berita Terkini -->
+        <section class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Berita Terkini</h2>
+                <a href="berita.html" class="text-blue-600 hover:text-blue-800 font-medium">
+                    Lihat Semua <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="berita-container">
+                <!-- Berita akan dimuat via JavaScript -->
+                <div class="text-center py-8">
+                    <i class="fas fa-spinner fa-spin text-3xl text-blue-600"></i>
+                    <p class="mt-2 text-gray-600">Memuat berita...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fasilitas Unggulan -->
+        <section class="mb-16 bg-blue-50 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Fasilitas Unggulan</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-flask text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lab Sains Modern</h3>
+                    <p class="text-gray-600">Laboratorium lengkap untuk praktikum sains</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lab Komputer</h3>
+                    <p class="text-gray-600">Fasilitas IT terkini dengan jaringan internet</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book-open text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Perpustakaan</h3>
+                    <p class="text-gray-600">Koleksi buku lengkap dengan ruang baca nyaman</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center card-hover">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-running text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lapangan Olahraga</h3>
+                    <p class="text-gray-600">Fasilitas olahraga lengkap dan modern</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-school mr-2"></i> SEKOLAH KITA
+                    </h3>
+                    <p class="mb-4">Membentuk generasi berkarakter, berprestasi, dan berwawasan global.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-xl hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-xl hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-blue-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400">Profil Sekolah</a></li>
+                        <li><a href="gallery.html" class="hover:text-blue-400">Galeri Kegiatan</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Hubungi Kami</a></li>
+                        <li><a href="admin/login.html" class="hover:text-blue-400">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>Jl. Pendidikan No. 123, Kota Pendidikan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-2"></i>
+                            <span>(021) 1234567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>info@sekolahkita.sch.id</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Jam Operasional</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span>Senin - Jumat</span>
+                            <span>07.00 - 16.00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sabtu</span>
+                            <span>08.00 - 12.00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Minggu</span>
+                            <span>Libur</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p>&copy; 2023 Sekolah Kita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
